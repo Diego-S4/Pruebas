@@ -1,0 +1,10 @@
+#contactanos, #ubicanos {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#qrcode-contacto {
+    text-align: center;
+}
+iframe {
+    max-width: 100%;
+}

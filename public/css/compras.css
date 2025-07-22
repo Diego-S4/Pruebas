@@ -1,0 +1,9 @@
+#carrito-lista {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+#pago-opciones {
+    display: flex;
+    gap: 10px;
+}

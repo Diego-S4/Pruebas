@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #ff6f61 !important;
+}
+section {
+    padding: 60px 0;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#inicio img {
+    max-width: 100%;
+}

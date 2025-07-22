@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Personalizados - Corazón de Jesús</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pedidos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="Corazón de Jesús" width="50"> Corazón de Jesús
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compras.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pedidos.html">Pedidos Personalizados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h2>Pedidos Personalizados</h2>
+        <form id="pedido-form">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required>
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción del Pedido</label>
+                <textarea class="form-control" id="descripcion" rows="5" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="foto" class="form-label">Subir Foto</label>
+                <input type="file" class="form-control" id="foto" accept="image/*">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Pedido</button>
+        </form>
+        <div id="mensaje-exito" class="alert alert-success mt-3" style="display: none;">
+            ¡Gracias por tu pedido! Nos contactaremos contigo en unos minutos.
+        </div>
+        <div id="qrcode" class="mt-3"></div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Pastelería Corazón de Jesús. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/sweetalert2.min.js"></script>
+    <script src="libs/email.min.js"></script>
+    <script src="libs/qrcode.min.js"></script>
+    <script src="js/pedidos.js"></script>
+</body>
+</html>
