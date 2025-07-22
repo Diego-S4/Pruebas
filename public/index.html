@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Corazón de Jesús" width="50">
+                <img src="img/logo.png" alt="Corazón de Jesús" width="50"> Corazón de Jesús
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="compras.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compras.html">Carrito <span id="carrito-contador" class="badge bg-primary">0</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos Personalizados</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
                 </ul>
@@ -29,10 +29,10 @@
         </div>
     </nav>
 
-    <section id="inicio" class="container text-center my-5">
-        <h1>Bienvenidos a Pastelería Corazón de Jesús</h1>
-        <p>Deliciosos postres hechos con amor para endulzar tu día.</p>
-        <img src="img/torta_chocolate.jpg" alt="Torta" class="img-fluid rounded" style="max-width: 500px;">
+    <section id="inicio" class="container my-5">
+        <h1 class="text-center">Bienvenidos a Pastelería Corazón de Jesús</h1>
+        <p class="text-center">Deliciosos postres hechos con amor para endulzar tu día.</p>
+        <div class="row" id="productos-lista"></div>
     </section>
 
     <footer class="bg-dark text-white text-center py-3">

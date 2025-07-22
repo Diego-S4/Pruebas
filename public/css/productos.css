@@ -1,9 +1,16 @@
-#carrito-lista {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
+#detalle-contenido {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
 }
-#pago-opciones {
-    display: flex;
-    gap: 10px;
+#detalle-contenido img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+#detalle-contenido h2 {
+    color: #ff6f61;
+}
+#detalle-contenido .btn {
+    width: 150px;
 }

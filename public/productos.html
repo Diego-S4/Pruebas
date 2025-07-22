@@ -21,7 +21,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="compras.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="compras.html">Carrito <span id="carrito-contador" class="badge bg-primary">0</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="pedidos.html">Pedidos Personalizados</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
                 </ul>
@@ -29,9 +29,8 @@
         </div>
     </nav>
 
-    <section id="productos" class="container my-5">
-        <h2>Nuestros Productos</h2>
-        <div class="row" id="productos-lista"></div>
+    <section id="producto-detalle" class="container my-5">
+        <div id="detalle-contenido" class="card"></div>
     </section>
 
     <footer class="bg-dark text-white text-center py-3">

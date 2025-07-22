@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Generar QR
         const qr = new QRCode(document.getElementById('qrcode'), {
-            text: `https://wa.me/51987654321?text=${encodeURIComponent(mensaje)}`,
+            text: `https://wa.me/519556969?text=${encodeURIComponent(mensaje)}`,
             width: 128,
             height: 128
         });
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('mensaje-exito').style.display = 'block';
             document.getElementById('pedido-form').reset();
             // Abrir WhatsApp
-            window.open(`https://wa.me/51987654321?text=${encodeURIComponent(mensaje)}`, '_blank');
+            window.open(`https://wa.me/51955696928?text=${encodeURIComponent(mensaje)}`, '_blank');
         }).catch(error => {
             Swal.fire({
                 icon: 'error',
