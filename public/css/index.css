@@ -1,32 +1,92 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-.navbar-brand {
-    font-weight: bold;
-    color: #ff6f61 !important;
+
+.carousel {
+    margin: 20px 0;
 }
-section {
-    padding: 60px 0;
+
+.carousel-inner {
+    max-height: 400px;
 }
-footer {
-    position: relative;
-    bottom: 0;
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+#inicio h2 {
+    color: #ff0000;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
     width: 100%;
+    height: 250px; /* Aumentado de 200px a 250px */
 }
-.producto-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+
+.card-body {
     padding: 15px;
     text-align: center;
-    margin-bottom: 20px;
-    cursor: pointer;
-    transition: transform 0.2s;
 }
-.producto-card:hover {
-    transform: scale(1.05);
+
+.card-title {
+    font-size: 1.25rem;
+    color: #ff4500;
+    margin-bottom: 10px;
 }
-.producto-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #ff4500;
+    border: none;
+    padding: 8px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #e25d09;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        max-height: 250px;
+    }
+    .carousel-item img {
+        height: 250px;
+    }
+    .card img {
+        height: 180px; /* Ajuste para móviles */
+    }
 }
